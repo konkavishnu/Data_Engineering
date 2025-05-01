@@ -9,8 +9,8 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 user_activity_df = spark.read.csv("A:/Data_Engineering/Day287_datasets/new_user_activity.csv", header=True, inferSchema=True)
-article_metadata_df = spark.read.csv("A:/Data_Engineering/Day287_datasets/new_user_activity.csv", header=True, inferSchema=True)
-user_profile_df = spark.read.csv("A:/Data_Engineering/Day287_datasets/new_user_activity.csv", header=True, inferSchema=True)
+article_metadata_df = spark.read.csv("A:/Data_Engineering/Day287_datasets/article_metadata.csv", header=True, inferSchema=True)
+user_profile_df = spark.read.csv("A:/Data_Engineering/Day287_datasets/user_profile_new.csv", header=True, inferSchema=True)
 
 user_activity_df.show()
 article_metadata_df.show()

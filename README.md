@@ -1,7 +1,20 @@
 # Spark Batch Processing
 
 ## Overview
-The **Spark Batch Processing** directory contains scripts and configurations for processing large datasets in batch mode using Apache Spark. This directory is designed to facilitate efficient data processing workflows, leveraging Spark's capabilities to handle big data.
+This project implements a data analytics platform for news content consumption using Apache Spark batch processing. It processes raw CSV data containing news consumption metrics and transforms it into analytical tables that provide insights into reader behavior, content performance, and engagement patterns.
+
+**The system follows a batch processing architecture:**
+Raw CSV data is ingested into the processing pipeline
+Apache Spark processes the data using optimized transformations
+Results are stored in Hive tables for analysis
+Apache Airflow orchestrates the entire ETL workflow
+
+**Technology Stack**
+Apache Spark: Core processing engine (v3.2.0)
+PySpark: Python API for Spark implementation
+Apache Hive: Data warehousing solution for structured query analysis
+Apache Airflow: Workflow orchestration tool for ETL pipelines
+Python 3.8+: Programming language for implementation
 
 ## Project Structure
 - **Airflow_job.py**: This script defines an Apache Airflow job that orchestrates the execution of Spark batch processing tasks. It schedules and manages the workflow, ensuring that the Spark jobs run in the correct order and handle dependencies effectively.
@@ -14,8 +27,6 @@ The **Spark Batch Processing** directory contains scripts and configurations for
 - Required Python packages:
   - `pyspark`
   - `apache-airflow`
-
-
 
 # Spark User Event Analysis (Spark Streaming)
 
