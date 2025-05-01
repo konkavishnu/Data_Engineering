@@ -1,3 +1,22 @@
+# Spark Batch Processing
+
+## Overview
+The **Spark Batch Processing** directory contains scripts and configurations for processing large datasets in batch mode using Apache Spark. This directory is designed to facilitate efficient data processing workflows, leveraging Spark's capabilities to handle big data.
+
+## Project Structure
+- **Airflow_job.py**: This script defines an Apache Airflow job that orchestrates the execution of Spark batch processing tasks. It schedules and manages the workflow, ensuring that the Spark jobs run in the correct order and handle dependencies effectively.
+- **Spark_batch_processing.py**: This script contains the main logic for processing data in batches using Apache Spark. It includes data ingestion, transformation, and output storage.
+
+## Requirements
+- Python 3.x
+- Apache Spark
+- Apache Airflow
+- Required Python packages:
+  - `pyspark`
+  - `apache-airflow`
+
+
+
 # Spark User Event Analysis (Spark Streaming)
 
 ## Overview
@@ -23,3 +42,7 @@ You can install the necessary Python packages using pip:
 
 ```bash
 pip install confluent-kafka pyspark
+
+```bash
+pip install pyspark apache-airflow
+
