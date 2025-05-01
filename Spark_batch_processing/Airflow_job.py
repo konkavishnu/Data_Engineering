@@ -13,5 +13,5 @@ with DAG(
     # Task: Run a Spark job
     run_spark_job = BashOperator(
         task_id='run_spark_job',
-        bash_command='/opt/spark/bin/spark-submit --master local ~/airflow/dags/Spark_airflow.py',
+        bash_command='/opt/spark/bin/spark-submit --master local ~/airflow/dags/News_Platform_Analytics.py',
     )
